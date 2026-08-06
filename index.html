@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav>
+       <div class="left">
+        <a href="/">Asmaa Husien</a>
+       </div>
+       <div class="right">
+        <a href="http://github.com/asmaahusien440-droid" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/asmaa-husien" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+
+
+        <a href="mailto:asmaahusien440@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </a>
+       </div>
+    </nav>
+
+    <main>
+        <!-- Section1 :  Hero Section -->
+        <section class="hero-section">
+            <div class="text">
+                <h1>Hi, I'm Asmaa👋</h1>
+                <h2>Flutter Developer & Front-End Web Developer</h2>
+                <p>Hello! I'm Asmaa Hussein, a Computer Science student and aspiring Flutter Developer.
+                    I enjoy building modern mobile and web applications with clean code and intuitive user experiences.
+                     Every project I create is an opportunity to learn, grow, and turn ideas into real solutions.
+                </p>
+                <div class ="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>   
+                    
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>   
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>   
+                </div>
+            </div>
+
+            <div class="headshot">
+               <img src="My_personal_photo.webp" alt="Asmaa Husien Headshot">
+                    
+            </div>
+        </section>
+
+        <!-- Section2 :  Skills Section -->
+        <section class="skills-section">
+            <h1>Skills</h1>
+            <div class="text">
+                 My toolkit includes mobile development, front-end technologies,
+                 programming languages, and development tools. I enjoy writing clean,
+                 maintainable code and continuously expanding my technical knowledge
+                 through practical projects.
+            </div>
+            <div id="skills" class="cells">
+                <div class="cell">
+                    <img src="html5-original.svg" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="css3-original.svg" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="flutter-original.svg" alt="Flutter">
+                    <span>Flutter</span>
+                </div>
+                <div class="cell">
+                    <img src="dart-original.svg" alt="Dart">
+                    <span>Dart</span>
+                </div>
+                <div class="cell">
+                    <img src="cplusplus-original.svg" alt="C++">
+                    <span>C++</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section3 :  About MY Work Section -->
+        <section id="about" class="about-section">
+            <h1>About My Work</h1>
+            <div class="group">
+                <div class="personal-details">
+                    <img src="My_photo.webp" alt="Asmaa Husien Headshot">
+                    <p>Asmaa Husien</p>
+                    <p>Flutter Developer & Front-End Web Developer</p>
+
+                </div>
+                <div class="text">"I enjoy transforming ideas into clean, responsive, and user-friendly applications. Every project I build focuses on writing organized, maintainable code while creating a smooth user experience. I continuously improve my skills by building real-world projects, learning modern technologies, and applying best practices in both Flutter and front-end web development. My goal is to deliver applications that are not only functional but also visually appealing and easy to use."</div>
+            </div>
+
+        </section>
+
+        <!-- Section4 :  Contact Section -->
+        <section id="contact" class="contact-section">
+            <h1>Contact</h1>
+            <div class="group">
+                <div class="text">
+                    I'd love to hear from you! Whether you have a question, a new project idea, or just want to say hi, feel free to drop a message. I'll get back to you as soon as possible.
+                </div>
+
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="10" cols="30"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,436 @@
+:root{
+    --link-color: #6366f1; 
+    --link-hover: #4f46e5;
+    --background-color: #f8fafc; 
+    --surface-color: #ffffff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/*NavBar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 90px;
+    align-items: center;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav .right a:last-child{
+    color: #fff;
+    background: linear-gradient(135deg, var(--link-color) 0%, var(--link-hover) 100%);
+    padding: 8px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    transition: all 0.3s ease;
+}
+
+nav .right a:last-child:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    color: #fff;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*Section 1 : Hero Section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 60px 0 100px 0;
+    gap: 40px;
+}
+
+.hero-section .text{
+    flex: 5;
+}
+
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-section .headshot img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid var(--surface-color);
+    box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.25);
+}
+
+.hero-section .text h1{
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.hero-section .text h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--link-color);
+    margin-bottom: 20px;
+}
+
+.hero-section .text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+.hero-section .text .links a{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border-radius: 30px; 
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.hero-section .text .links a i {
+    margin-right: 8px;
+    color: var(--link-color);
+}
+
+.hero-section .text .links a:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    color: var(--link-color);
+}
+
+/*Section 2 : Skills Section */
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 120px;
+}
+
+.skills-section h1{
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4b5563;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 180px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: var(--surface-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skills-section .cells .cell:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.skills-section .cells .cell img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+    font-weight: 600;
+}  
+
+/*Section 3 : About My Work Section */
+.about-section{
+    padding: 0 50px;
+    margin-bottom: 120px;
+}
+
+.about-section h1{
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.about-section .group{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: var(--surface-color);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.about-section .group .personal-details{
+    text-align: center;
+    flex: 3;
+}
+
+.about-section .group .text{
+    flex: 7;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+    font-style: italic;
+    border-left: 4px solid var(--link-color);
+    padding-left: 25px;
+}
+
+.about-section .group .personal-details img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid var(--background-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.about-section .group .personal-details p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.about-section .group .personal-details p:last-child{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--link-color);
+}
+
+/*section 4 : Contact Section */
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h1{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 60px; 
+}
+
+.contact-section .group .text{
+    flex: 2;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background: var(--surface-color);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.contact-section .group form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid transparent;
+    background-color: var(--background-color); /* حقل إدخال أغمق قليلاً من الكارت */
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-section .group form input:focus,
+.contact-section .group form textarea:focus{
+    border-color: var(--link-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+    background-color: #fff;
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, var(--link-color) 0%, var(--link-hover) 100%);
+    border: none;
+    height: 55px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+    margin-top: 10px;
+}
+
+.contact-section .group form button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -5px rgba(99, 102, 241, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 850px){
+    .hero-section .text h1{
+       font-size: 40px;
+    }
+    .hero-section .text h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 740px){
+    .hero-section{
+       flex-direction: column-reverse;
+       text-align: center;
+    }
+    .hero-section .headshot{
+        justify-content: center;
+    }
+    .hero-section .headshot img{
+        width: 280px;
+        height: 280px;
+    }
+    .hero-section .text .links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about-section .group{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .about-section .group .text{
+        border-left: none;
+        border-top: 4px solid var(--link-color);
+        padding-left: 0;
+        padding-top: 25px;
+    }
+
+    .contact-section .group{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a{
+        font-size: 20px;
+        margin: 0 8px;
+    }
+    nav .right a:last-child{
+        color: var(--link-color);
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+    nav .right a span{
+        display: none;
+    }
+
+    .hero-section{
+        padding: 0 20px;
+    }
+    .hero-section .text h1{
+        font-size: 32px;
+    }
+    .hero-section .text h2{
+        font-size: 16px;
+    }
+
+    .skills-section{
+        padding: 0 20px;
+    }
+    .about-section{
+        padding: 0 20px;
+    }
+    .contact-section{
+        padding: 0 20px;
+    }
+    .contact-section .group form{
+        padding: 25px 15px;
+    }
+}
