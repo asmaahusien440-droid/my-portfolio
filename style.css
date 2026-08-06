@@ -311,7 +311,7 @@ nav .right a span{
 .contact-section .group form textarea{
     font-family: 'Poppins', sans-serif;
     border: 2px solid transparent;
-    background-color: var(--background-color); /* حقل إدخال أغمق قليلاً من الكارت */
+    background-color: var(--background-color);
     padding: 15px;
     margin-bottom: 25px;
     border-radius: 12px;
